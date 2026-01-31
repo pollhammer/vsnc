@@ -30,7 +30,7 @@
 3. Start the file, enter your name, and press [W] to write messages.
 
 ## 🗺️ Roadmap & Future Plans
-- [ ] **Chat-Encryption** The content of the text file is encrypted and cannot be deciphered without a key.
+- [ ] **Chat-Encryption:** The content of the text file is encrypted and cannot be deciphered without a key.
 - [ ] **User Colors:**  Randomly assigned ANSI color per user nickname.
 - [ ] **Timestamps:** Automatic timestamps for messages.
 ---

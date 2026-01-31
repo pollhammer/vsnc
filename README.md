@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📟 VSNC – Very Simple Net Chat
+# 💬 VSNC – Very Simple Net Chat
 **Minimalist CMD chat for Windows networks**
 
 </div>

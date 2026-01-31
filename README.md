@@ -49,3 +49,10 @@ Dieses Projekt steht unter der **MIT-Lizenz**.
 
 > [!IMPORTANT]
 > **Sicherheitshinweis:** Da die Nachrichten in einer einfachen `.txt` Datei gespeichert werden, erfolgt die Übertragung im Klartext. Nutze **VSNC** vorzugsweise in sicheren LAN- oder VPN-Umgebungen.
+
+
+
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot01.png)
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot02.png)
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot03.png)
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot04.png)

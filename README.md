@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📟 VSNC – Very Simple Net Chat
-**Minimalistischer CMD-Chat für Windows-Netzwerke**
+**Minimalist CMD chat for Windows networks**
 
 </div>
 
@@ -11,36 +11,35 @@
 
 ---
 
-## 🚀 Was ist VSNC?
-**VSNC** ist ein federleichter Chat-Client, der komplett in einer einzigen Windows-Batch-Datei läuft. Keine Installation, keine Server-Infrastruktur – pure Effizienz direkt über die [Windows Konsole](https://learn.microsoft.com).
+## 🚀 What is VSNC?
+**VSNC** is an ultra-lightweight chat client that runs entirely from a single Windows batch file. No installation, no server infrastructure — just pure efficiency directly in the [Windows Console](https://learn.microsoft.com).
 
 ### ✨ Highlights
-- **Plug & Play:** Einfach die `.bat` Datei starten und loslegen.
-- **Netzwerk-Chat:** Ändere den Pfad in der Variable `set CHAT=C:\Temp` auf ein **Netzlaufwerk**, damit mehrere Personen gleichzeitig chatten können.
-- **ANSI-Optik:** Nutzt moderne [ANSI-Escapesequenzen](https://en.wikipedia.org) für stylische Farben.
-- **Ultra-Portable:** Läuft direkt vom USB-Stick oder Netzlaufwerk.
+- **Plug & Play:** Just start the `.bat` file and you’re good to go.
+- **Network Chat:** Change the path in the variable `set CHAT=C:\Temp` to a **network drive** so multiple users can chat at the same time.
+- **ANSI Styling:** Uses modern [ANSI escape sequences](https://en.wikipedia.org) for colorful, stylish output.
+- **Ultra Portable:** Runs directly from a USB stick or a network share.
 
 ---
 
-## 🛠️ Einrichtung & Nutzung
-1. Lade die `vsnc.bat` herunter.
-2. (Optional) Ändere den Speicherort der Nachrichten im Quellcode:
+## 🛠️ Setup & Usage
+1. Download `vsnc.bat`.
+2. (Optional) Change the message storage location in the source code:
    ```batch
-   set CHAT=\\DeinServer\ChatFreigabe
-3. Starte die Datei, gib deinen Namen ein und drücke **[W]**, um zu schreiben.
+   set CHAT=\\YourServer\ChatShare
+3. Start the file, enter your name, and press [W] to write messages.
 
-## 🗺️ Roadmap & Zukunft
-- [ ] **Timestamps:** Automatische Zeitstempel für Nachrichten.
-- [ ] **Auto-Cleanup:** Automatische Archivierung alter Chat-Inhalte.
-- [ ] **Notifications:** Visuelle oder akustische Signale bei neuen Nachrichten.
-
+## 🗺️ Roadmap & Future Plans
+- [ ] **Chat-Encryption** The content of the text file is encrypted and cannot be deciphered without a key.
+- [ ] **User Colors:**  Randomly assigned ANSI color per user nickname.
+- [ ] **Timestamps:** Automatic timestamps for messages.
 ---
 
-## ⚖️ Lizenz & Sicherheit
-Dieses Projekt steht unter der **MIT-Lizenz**.
+## ⚖️ License & Security
+This project is licensed under the **MIT License.**
 
 > [!IMPORTANT]
-> **Sicherheitshinweis:** Da die Nachrichten in einer einfachen `.txt` Datei gespeichert werden, erfolgt die Übertragung im Klartext. Nutze **VSNC** vorzugsweise in sicheren LAN- oder VPN-Umgebungen.
+> **Security Notice:** Messages are stored in a plain .txt file and transmitted in clear text. Use VSNC preferably in trusted LAN or VPN environments.
 
 
 

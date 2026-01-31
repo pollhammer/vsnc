@@ -1,7 +1,8 @@
 <div align="center">
 
 # 💬 VSNC – Very Simple Net Chat
-**Minimalist CMD chat for Windows networks**
+**Minimalist CMD chat for Windows networks** <br>
+by Manuel Pollhammer (2026)
 
 </div>
 

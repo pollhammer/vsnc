@@ -16,7 +16,7 @@ set CHAT=C:\Temp
 set CHATFILE=%CHAT%\chat.txt
 
 :: Date/time variable
-set "TS=%DATE%%TIME:~0,5%"
+set "TS=%DATE% %TIME:~0,5%"
 
 echo.
 echo %ESC%[38;5;214m                  _   __ _____  _   __ ______
@@ -81,3 +81,4 @@ goto loop
 
 :end
 exit
+

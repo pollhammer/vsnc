@@ -3,7 +3,7 @@ reg add "HKCU\Console" /v VirtualTerminalLevel /t REG_DWORD /d 1 /f >nul 2>&1
 for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"
 
 chcp 65001 >nul
-title VSNC v1.1
+title VSNC v1.2
 mode con: cols=85 lines=30
 
 
@@ -19,16 +19,16 @@ set CHATFILE=%CHAT%\chat.txt
 set "TS=%DATE%-%TIME:~0,5%"
 
 echo.
-echo %ESC%[38;5;214m                  _   __ _____  _   __ ______
-echo %ESC%[38;5;208m                 ^| ^| / // ___/ / ^| / // ____/
-echo %ESC%[38;5;202m                 ^| ^|/ / \__ \ /  ^|/ // /     
-echo %ESC%[38;5;196m                 ^|   /  ___/ / /^|  // /___   
-echo %ESC%[38;5;124m                 ^|__/  /____/_/ ^|_/ \____/   
+echo %ESC%[38;5;214m                              _   __ _____  _   __ ______
+echo %ESC%[38;5;208m                             ^| ^| / // ___/ / ^| / // ____/
+echo %ESC%[38;5;202m                             ^| ^|/ / \__ \ /  ^|/ // /     
+echo %ESC%[38;5;196m                             ^|   /  ___/ / /^|  // /___   
+echo %ESC%[38;5;124m                             ^|__/  /____/_/ ^|_/ \____/   
 echo %ESC%[0m
 
-echo                            v1.1
-echo                     Very Simple Net Chat     
-echo                 (2026) by Manuel Pollhammer
+echo                                        v1.2
+echo                                 Very Simple Net Chat     
+echo                             (2026) by Manuel Pollhammer
 echo.
 
 set /p USER=Please enter your name: 

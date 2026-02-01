@@ -16,7 +16,7 @@ set CHAT=C:\Temp
 set CHATFILE=%CHAT%\chat.txt
 
 :: Date/time variable
-set "TS=%DATE% %TIME:~0,5%"
+set "TS=%DATE%-%TIME:~0,5%"
 
 echo.
 echo %ESC%[38;5;214m                  _   __ _____  _   __ ______
@@ -72,7 +72,7 @@ set /p TEXT=%ESC%[38;5;208m %USER%: %ESC%[0m
 
 if not "%TEXT%"=="" (
     :: Capture date & time
-    set "TS=%DATE%%TIME:~0,5%"
+    set "TS=%DATE%-%TIME:~0,5%"
     :: Write message to chat file
     >>"%CHATFILE%" echo %ESC%[38;5;240m[%TS%]%ESC%[0m %ESC%[38;5;208m%USER%:%ESC%[0m %TEXT%
 )
@@ -81,4 +81,5 @@ goto loop
 
 :end
 exit
+
 

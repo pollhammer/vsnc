@@ -1,3 +1,5 @@
+![ASCII Logo](./logo.svg)
+
 <div align="center">
 
 # 💬 VSNC – Very Simple Net Chat

@@ -44,7 +44,4 @@ by Manuel Pollhammer (2026)
 
 
 
-![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot01.png)
-![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot02.png)
-![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot03.png)
-![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/screenshot04.png)
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v1.1.png)

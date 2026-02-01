@@ -3,10 +3,11 @@
   <style>
     .ascii { font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; white-space: pre; }
   </style>
-  <text x="0" y="20" fill="#ffaf00" class="ascii">              _   __ _____  _   __ ______</text>
-  <text x="0" y="40" fill="#ff8700" class="ascii">             | | / // ___/ / | / // ____/</text>
-  <text x="0" y="60" fill="#ff5f00" class="ascii">             | |/ / \__ \ /  |/ // /     </text>
-  <text x="0" y="80" fill="#ff0000" class="ascii">             |   /  ___/ / /|  // /___   </text>
-  <text x="0" y="100" fill="#af0000" class="ascii">             |__/  /____/_/ |_/ \____/   </text>
+  <text x="0" y="20" fill="#ffaf00" class="ascii">            _   __ _____  _   __ ______</text>
+  <text x="0" y="40" fill="#ff8700" class="ascii">           | | / // ___/ / | / // ____/</text>
+  <text x="0" y="60" fill="#ff5f00" class="ascii">           | |/ / \__ \ /  |/ // /     </text>
+  <text x="0" y="80" fill="#ff0000" class="ascii">           |   /  ___/ / /|  // /___   </text>
+  <text x="0" y="100" fill="#af0000" class="ascii">           |__/  /____/_/ |_/ \____/   </text>
 
 </svg>
+

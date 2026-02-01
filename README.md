@@ -33,7 +33,8 @@ by Manuel Pollhammer (2026)
 ## 🗺️ Roadmap & Future Plans
 - [ ] **Chat-Encryption:** The content of the text file is encrypted and cannot be deciphered without a key.
 - [ ] **User Colors:**  Randomly assigned ANSI color per user nickname.
-- [ ] **Timestamps:** Automatic timestamps for messages.
+- [x] ~~**Timestamps:** Automatic timestamps for messages.~~
+
 ---
 
 ## ⚖️ License & Security

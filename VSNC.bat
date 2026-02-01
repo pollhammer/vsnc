@@ -38,7 +38,7 @@ if "%USER%"=="" set USER=Guest
 mode con: cols=85 lines=30
 
 if not exist "%CHATFILE%" (
-    >>"%CHATFILE%" echo %ESC%[38;5;240m%ESC%[0m%ESC%[38;5;196mSystem:%ESC%[0m Chat started.
+    >>"%CHATFILE%" echo %ESC%[38;5;240m%ESC%[0m%ESC%[38;5;196m System:%ESC%[0m Chat started.
 )
 
 

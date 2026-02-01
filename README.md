@@ -1,10 +1,8 @@
-
-
 <div align="center">
-
-   ![ASCII Logo](./logo.svg)
+ 
+![ASCII Logo](./logo.svg)
    
-# 💬 Very Simple Net Chat
+# Very Simple Net Chat
 **Minimalist CMD chat for Windows networks** <br>
 by Manuel Pollhammer (2026)
 

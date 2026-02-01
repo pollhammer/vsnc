@@ -39,9 +39,6 @@ by Manuel Pollhammer (2026)
 
 ---
 
-## ⚖️ License & Security
-This project is licensed under the **MIT License.**
-
 > [!IMPORTANT]
 > **Security Notice:** Messages are stored in a plain .txt file and transmitted in clear text. Use VSNC preferably in trusted LAN or VPN environments.
 

@@ -33,9 +33,9 @@ by Manuel Pollhammer (2026)
 3. Start the file, enter your name, and press [W] to write messages.
 
 ## 🗺️ Roadmap & Future Plans
-- [ ] **Chat-Encryption:** The content of the text file is encrypted and cannot be deciphered without a key.
-- [ ] **User Colors:**  Randomly assigned ANSI color per user nickname.
-- [x] ~~**Timestamps:** Automatic timestamps for messages.~~
+![planned](https://img.shields.io/badge/status-planned-orange) ㅤ**Chat-Encryption:** Encrypted chat file <br>
+![planned](https://img.shields.io/badge/status-planned-orange) ㅤ**User Colors:** Random ANSI color per nickname <br>
+![done](https://img.shields.io/badge/status-done-darkgreen)    ㅤㅤ**Timestamps:** Automatic timestamps for messages. <br>
 
 ---
 

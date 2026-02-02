@@ -33,9 +33,10 @@ by Manuel Pollhammer (2026)
 3. Start the file, enter your name, and press [W] to write messages.
 
 ## 🗺️ Roadmap & Future Plans
-![planned](https://img.shields.io/badge/status-planned-orange)ㅤ**Chat-Encryption:** Encrypted chat file <br>
-![done](https://img.shields.io/badge/status-done-darkgreen)ㅤ**User Colors:** Random ANSI color per nickname <br>
 ![done](https://img.shields.io/badge/status-done-darkgreen)ㅤ**Timestamps:** Automatic timestamps for messages. <br>
+![done](https://img.shields.io/badge/status-done-darkgreen)ㅤ**User Colors:** Random ANSI color per nickname <br>
+<br>
+![planned](https://img.shields.io/badge/status-planned-orange)ㅤ**Chat-Encryption:** Encrypted chat file <br>
 
 ---
 

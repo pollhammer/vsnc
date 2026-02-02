@@ -15,12 +15,12 @@ by Manuel Pollhammer (2026)
 ---
 
 ## 🚀 What is VSNC?
-**VSNC** is an ultra-lightweight chat client that runs entirely from a single Windows batch file. No installation, no server infrastructure — just pure efficiency directly in the [Windows Console](https://learn.microsoft.com).
+**VSNC** is an ultra-lightweight chat client that runs entirely from a single Windows batch file. No installation, no server infrastructure — just pure efficiency directly in the [Windows Console](https://en.wikipedia.org/wiki/Windows_Console).
 
 ### ✨ Highlights
 - **Plug & Play:** Just start the `.bat` file and you’re good to go.
 - **Network Chat:** Change the path in the variable `set CHAT=C:\Temp` to a **network drive** so multiple users can chat at the same time.
-- **ANSI Styling:** Uses modern [ANSI escape sequences](https://en.wikipedia.org) for colorful, stylish output.
+- **ANSI Styling:** Uses modern [ANSI escape sequences](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797) for colorful, stylish output.
 - **Ultra Portable:** Runs directly from a USB stick or a network share.
 
 ---

@@ -2,7 +2,7 @@
 
  ![ASCII Logo](./logo.svg)
    
-# Very Simple Net Chat
+# Very Simple Network Chat
 **Minimalist CMD chat for Windows networks** <br>
 by Manuel Pollhammer (2026)
 

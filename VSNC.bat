@@ -28,7 +28,7 @@ echo %ESC%[38;5;196m                             ^|   /  ___/ / /^|  // /___
 echo %ESC%[38;5;124m                             ^|__/  /____/_/ ^|_/ \____/   
 echo %ESC%[0m
 echo                                        v1.2
-echo                                 Very Simple Net Chat     
+echo                               Very Simple Network Chat     
 echo                             (2026) by Manuel Pollhammer
 echo.
 

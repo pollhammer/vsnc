@@ -6,7 +6,7 @@ for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"
 reg add "HKCU\Console" /v VirtualTerminalLevel /t REG_DWORD /d 1 /f >nul 2>&1
 
 chcp 65001 >nul
-title VSNC v1.3
+title VSNC v1.4
 mode con: cols=85 lines=30
 
 :: Chat directory for txt file
@@ -24,7 +24,7 @@ echo %ESC%[38;5;202m                             ^| ^|/ / \__ \ /  ^|/ // /
 echo %ESC%[38;5;196m                             ^|   /  ___/ / /^|  // /___   
 echo %ESC%[38;5;124m                             ^|__/  /____/_/ ^|_/ \____/   
 echo %ESC%[0m
-echo                                        v1.3
+echo                                        v1.4
 echo                               Very Simple Network Chat     
 echo                             (2026) by Manuel Pollhammer
 echo.
@@ -79,6 +79,25 @@ set /p TEXT=%ESC%[38;5;%USERCOLOR%m %USER%:%ESC%[0m
 if not "%TEXT%"=="" (
     >>"%CHATFILE%" echo %ESC%[38;5;240m[%DATE%-%TIME:~0,5%]%ESC%[0m %ESC%[38;5;%USERCOLOR%m%USER%:%ESC%[0m %TEXT%
 )
+
+:: ===== LIMIT chat.txt TO LAST 40 LINES =====
+set MAXLINES=40
+set COUNT=0
+
+for /f "delims=" %%l in ('type "%CHATFILE%"') do (
+    set /a COUNT+=1
+    set "TMP[!COUNT!]=%%l"
+)
+
+if !COUNT! gtr %MAXLINES% (
+    (
+        for /l %%i in (!COUNT!-%MAXLINES%+1,1,!COUNT!) do (
+            echo !TMP[%%i]!
+        )
+    ) > "%CHATFILE%"
+)
+:: ==========================================
+
 goto loop
 
 :end

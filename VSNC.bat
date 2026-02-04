@@ -1,5 +1,6 @@
 @echo off
 setlocal EnableDelayedExpansion
+:: https://github.com/pollhammer/vsnc
 
 :: Initialization
 for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"

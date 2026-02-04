@@ -48,6 +48,7 @@ if not exist "%CHATFILE%" (
 cls
 echo %ESC%[H
 echo ===== CHAT (latest 20) =====
+echo.
 
 set /a LINECOUNT=0
 for /f "delims=" %%l in ('type "%CHATFILE%" 2^>nul') do (
@@ -80,8 +81,9 @@ if not "%TEXT%"=="" (
     >>"%CHATFILE%" echo %ESC%[38;5;240m[%DATE%-%TIME:~0,5%]%ESC%[0m %ESC%[38;5;%USERCOLOR%m%USER%:%ESC%[0m %TEXT%
 )
 
-:: ===== LIMIT chat.txt TO LAST 40 LINES =====
+:: ===== LIMIT chat.txt BY REMOVING FIRST 20 LINES WHEN 40 REACHED =====
 set MAXLINES=40
+set TRIMLINES=20
 set COUNT=0
 
 for /f "delims=" %%l in ('type "%CHATFILE%"') do (
@@ -89,14 +91,14 @@ for /f "delims=" %%l in ('type "%CHATFILE%"') do (
     set "TMP[!COUNT!]=%%l"
 )
 
-if !COUNT! gtr %MAXLINES% (
+if !COUNT! geq %MAXLINES% (
     (
-        for /l %%i in (!COUNT!-%MAXLINES%+1,1,!COUNT!) do (
+        for /l %%i in (%TRIMLINES%+1,1,!COUNT!) do (
             echo !TMP[%%i]!
         )
     ) > "%CHATFILE%"
 )
-:: ==========================================
+:: ================================================================
 
 goto loop
 

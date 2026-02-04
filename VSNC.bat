@@ -48,7 +48,6 @@ if not exist "%CHATFILE%" (
 cls
 echo %ESC%[H
 echo ===== CHAT (latest 20) =====
-echo.
 
 set /a LINECOUNT=0
 for /f "delims=" %%l in ('type "%CHATFILE%" 2^>nul') do (

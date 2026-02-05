@@ -35,7 +35,7 @@ by Manuel Pollhammer (2026)
 ## 🗺️ Roadmap & Future Plans
 ![done](https://img.shields.io/badge/status-done-darkgreen)ㅤ**Timestamps:** Automatic timestamps for messages. <br>
 ![done](https://img.shields.io/badge/status-done-darkgreen)ㅤ**User Colors:** Random ANSI color per nickname <br>
-![done](https://img.shields.io/badge/status-done-darkgreen)ㅤ**User Colors:** Each username is permanently assigned a unique color **NEW!**
+![done](https://img.shields.io/badge/status-done-darkgreen)ㅤ**User Colors:** Each username is permanently assigned a unique color **❗NEW❗**
 <br>
 ![planned](https://img.shields.io/badge/status-planned-orange)ㅤ**Chat-Encryption:** Encrypted chat file <br>
 

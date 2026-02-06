@@ -36,5 +36,7 @@ by Manuel Pollhammer (2026)
 
 ---
 
-![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v1.5_01.png)
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v2.0_01.png)
+<br>
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v2.0_02.png)
 

@@ -18,7 +18,6 @@ set "USERCOLORFILE=%CHAT%\usercolors.txt"
 if not exist "%CHAT%" mkdir "%CHAT%"
 if not exist "%USERCOLORFILE%" echo.>"%USERCOLORFILE%"
 
-
 :: Header
 echo.
 echo %ESC%[38;5;214m                              _   __ _____  _   __ ______
@@ -35,7 +34,8 @@ echo.
 :: User login
 set /p USER=Please enter your name: 
 if "%USER%"=="" set USER=Guest
-:: Erstelle einen sauberen Dateinamen fuer temporaere Dateien
+
+:: Create a safe filename for temporary files
 set "SAFEUSER=%USER: =_%"
 set "TMPF=%CHAT%\vsnc_%SAFEUSER%"
 
@@ -58,13 +58,13 @@ if not defined USERCOLOR (
 :: Stabilize window
 mode con: cols=85 lines=30
 
-
 :: ================= MAIN LOOP =================
 :loop
 cls
 echo %ESC%[H
-echo ===== CHAT (latest 20) =====
+echo ===== CHAT (latest 15) =====
 echo %ESC%[38;5;196mSystem:%ESC%[0m Chat started
+echo.
 
 set LINECOUNT=0
 if exist "%CHATFILE%" (
@@ -72,7 +72,7 @@ if exist "%CHATFILE%" (
         set /a LINECOUNT+=1
         set "DECODED_LINE="
         
-        :: Dekodieren der Zeile
+        :: Decode the line from Base64
         echo %%L > "%TMPF%.b64"
         certutil -decode "%TMPF%.b64" "%TMPF%.bin" >nul 2>&1
         
@@ -84,13 +84,13 @@ if exist "%CHATFILE%" (
     )
 )
 
-set /a START=LINECOUNT-19
+set /a START=LINECOUNT-14
 if !START! LSS 1 set START=1
 for /l %%I in (!START!,1,!LINECOUNT!) do (
     if defined LINE[%%I] echo !LINE[%%I]!
 )
 
-:: Cache leeren fuer den nächsten Refresh
+:: Clear cache for next refresh
 for /l %%I in (1,1,!LINECOUNT!) do set "LINE[%%I]="
 
 echo.
@@ -108,17 +108,18 @@ set "TEXT="
 set /p TEXT=%ESC%[38;5;!USERCOLOR!m %USER%:%ESC%[0m 
 
 if defined TEXT (
-    :: Zeitstempel ohne Sekunden
-    set "T=%TIME:~0,5%"
-    set "RAW=%ESC%[38;5;240m[!T!]%ESC%[0m %ESC%[38;5;!USERCOLOR!m%USER%:%ESC%[0m %TEXT%"
+    :: Timestamp with date (YYYY-MM-DD HH:MM)
+    set "DATESTAMP=%DATE%"
+    set "TIMESTAMP=%TIME:~0,5%"
+    set "RAW=%ESC%[38;5;240m[!DATESTAMP! !TIMESTAMP!]%ESC%[0m %ESC%[38;5;!USERCOLOR!m%USER%:%ESC%[0m %TEXT%"
     
-    :: In Datei schreiben (ohne Zeilenumbruch fuer sauberes B64)
+    :: Write to file without newline for clean Base64 encoding
     <nul set /p="!RAW!" > "%TMPF%.raw"
     
-    :: Kodieren
+    :: Encode to Base64
     certutil -encode "%TMPF%.raw" "%TMPF%.b64_full" >nul 2>&1
     
-    :: Nur die Datenzeilen extrahieren (Header/Footer entfernen)
+    :: Extract only data lines (remove header/footer)
     set "B64_DATA="
     for /f "usebackq tokens=*" %%B in ("%TMPF%.b64_full") do (
         set "ln=%%B"
@@ -129,13 +130,14 @@ if defined TEXT (
     del "%TMPF%.raw" "%TMPF%.b64_full" "%TMPF%.b64" >nul 2>&1
 )
 
-:: ===== LIMIT chat.txt (Wartung der Datei) =====
+:: ===== LIMIT chat.txt (maintain max 15 messages) =====
 set /a C_LINES=0
 for /f "usebackq delims=" %%l in ("%CHATFILE%") do set /a C_LINES+=1
-if !C_LINES! geq 40 (
-    set /a SKIP=C_LINES-20
-    for /f "usebackq skip=%SKIP% delims=" %%l in ("%CHATFILE%") do echo %%l>>"%CHATFILE%.new"
-    move /y "%CHATFILE%.new" "%CHATFILE%" >nul
+
+if !C_LINES! gtr 15 (
+    :: Remove the oldest line (line 1) to keep max 15
+    more +1 "%CHATFILE%" > "%CHATFILE%.tmp"
+    move /y "%CHATFILE%.tmp" "%CHATFILE%" >nul
 )
 
 goto loop

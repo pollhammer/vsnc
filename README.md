@@ -44,6 +44,5 @@ by Manuel Pollhammer (2026)
 > [!IMPORTANT]
 > **Security Notice:** Messages are stored in a plain .txt file and transmitted in clear text. Use VSNC preferably in trusted LAN or VPN environments.
 
-
-
-![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v1.3.png)
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v1.5_01.png)
+![Alternativer Text](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v1.5_02.png)

@@ -19,7 +19,7 @@ by Manuel Pollhammer (2026)
 
 ### ✨ Highlights
 - **Plug & Play:** Just start the `.bat` file and you’re good to go. No installation or dependencies required. 🚀
-- **Privacy-Encoded:** All messages are stored using **Base64 encoding** (not encryption) in the `chat.txt` file, making the raw logs unreadable to prying eyes. 🔒
+- **Privacy-Encoded:** All messages are stored using 🟢 **Base64 encoding** 🔴 **(not encryption)** in the `chat.txt` file, making the raw logs not secure BUT unreadable to prying eyes. 😎
 - **Network-Ready:** Change the path in the variable `set CHAT=C:\Temp` to a **network drive** for real-time group chat. 🌐
 - **Concurrency Stable:** Features unique temporary file handling per user to prevent data collisions and message duplicates. 🔄
 - **ANSI Styling:** Uses modern ANSI Escape Sequences for professional, colorful output. 🎨

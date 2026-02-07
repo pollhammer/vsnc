@@ -12,7 +12,7 @@ for /F %%a in ('echo prompt $E ^| cmd') do set "ESC=%%a"
 reg add "HKCU\Console" /v VirtualTerminalLevel /t REG_DWORD /d 1 /f >nul 2>&1
 
 chcp 65001 >nul
-title VSNC v2.1 (Secure Network)
+title VSNC v2.1
 mode con: cols=85 lines=30
 
 :: -------------------- Chat directory ----------------------

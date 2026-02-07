@@ -18,11 +18,12 @@ by Manuel Pollhammer (2026)
 **VSNC** is an ultra-lightweight chat client that runs entirely from a single Windows batch file. No installation, no server infrastructure — just pure efficiency directly in the [Windows Console](https://en.wikipedia.org/wiki/Windows_Console).
 
 ### ✨ Highlights
-- **Plug & Play:** Start the `.bat` file—no installation or dependencies needed. 🚀
+- **Plug & Play:** Start the `.bat` file. No installation or dependencies needed. 🚀
 - **Privacy-Encoded:** Messages are stored in 🟢**Base64**, 🔴not secure BUT **unreadable to curious eyes**. 😎
 - **Network-Ready:** Set `CHAT=C:\Temp` to a **network drive** for live group chat. 🌐
 - **Concurrency Stable:** Each user gets a temp file to avoid collisions & duplicates. 🔄
 - **ANSI Styling:** Uses ANSI escape codes for colorful, professional output. 🎨
+- **User Colors:** Each user gets a random color, saved and reused on next login. 🌈
 - **Smart Maintenance:** Auto-trims chat history for small size and fast performance. ⚡
 
 

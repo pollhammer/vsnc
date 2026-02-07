@@ -24,7 +24,7 @@ by Manuel Pollhammer (2026)
 - **Concurrency Stable:** Each user gets a temp file to avoid collisions & duplicates. 🔄
 - **ANSI Styling:** Uses ANSI escape codes for colorful, professional output. 🎨
 - **User Colors:** Each user gets a random color, saved and reused on next login. 🌈
-- **Smart Maintenance:** Auto-trims chat history for small size and fast performance. ⚡
+- **Smart Maintenance:** Auto-trims chat history for small size and better performance. ⚡
 
 
 ---

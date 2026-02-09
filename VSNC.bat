@@ -45,7 +45,7 @@ set "SAFEUSER=%USER: =_%"
 set "TMPF=%CHAT%\vsnc_%SAFEUSER%"
 
 :: -------------------- User color handling ------------------
-set COLORS=11 12 13 14 15 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231
+set COLORS=9 10 11 12 13 14 45 51 82 118 196 202 208 214 220 226 231
 set "USERCOLOR="
 for /f "usebackq tokens=1,2 delims=:" %%A in ("%USERCOLORFILE%") do (
     if /I "%%A"=="%USER%" set "USERCOLOR=%%B"

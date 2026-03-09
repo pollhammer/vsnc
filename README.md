@@ -31,7 +31,7 @@ by Manuel Pollhammer (2026)
 
 ## 🛠️ Setup & Usage
 1. Download `vsnc.bat`.
-2. (Optional) Change the message storage location in the source code:
+2. Change the message storage location in the source code:
    ```batch
    set CHAT=\\YourServer\ChatShare
 3. Start the file, enter your name, and press [W] to write messages.

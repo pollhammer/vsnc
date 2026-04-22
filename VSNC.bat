@@ -175,7 +175,7 @@ echo !B64_DATA!>>"%CHATFILE%"
 :: Cleanup temporary files
 del "%TMPF%.raw" "%TMPF%.b64_full" "%TMPF%.b64" >nul 2>&1
 
-:: Limit chat.txt size to 30 history entries
+:: Limit chat.txt to 15 messages
 set /a C_LINES=0
 if exist "%CHATFILE%" (
     for /f "usebackq delims=" %%l in ("%CHATFILE%") do set /a C_LINES+=1

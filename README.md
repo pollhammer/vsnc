@@ -25,6 +25,10 @@ by Manuel Pollhammer (2026)
 - **Encoded History:** Stores messages in **Base64** to prevent casual reading.
 - **Smart Maintenance:** Auto-trims history to 15 messages for peak speed.
 
+### ⏳ Coming Soon
+*   **🔔 Audio Notifications:** System alerts (Ping) for incoming private messages.
+*   **👥 User List:** Command to see all active users in the current chat directory.
+
 ---
 
 ## 🛠️ Quick Start

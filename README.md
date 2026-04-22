@@ -15,7 +15,7 @@ by Manuel Pollhammer (2026)
 
 ### 🌟 New in v2.2: Private Messaging
 - **🔒 Secure PMs:** Use `/pm username message` to send encrypted-view messages.
-- **👁️ Privacy Filter:** Private messages are only rendered for the sender and the recipient. Everyone else sees nothing.
+- **👁️ Privacy Filter:** Private messages are visible only to the sender and recipient.
 - **💬 Cleaner UI:** Fixed menu flickering and optimized message spacing.
 
 ### ✨ Core Highlights

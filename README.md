@@ -1,10 +1,12 @@
 <div align="center">
 
- ![ASCII Logo](./logo.svg)
+<img src="./logo.svg" width="600" alt="ASCII Logo">
    
 # Very Simple Network Chat <br> v2.2 - PM Edition
 **Minimalist CMD chat for Windows networks** <br>
 by Manuel Pollhammer (2026)
+</div>
+
 
 </div>
 

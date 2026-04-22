@@ -180,7 +180,7 @@ set /a C_LINES=0
 if exist "%CHATFILE%" (
     for /f "usebackq delims=" %%l in ("%CHATFILE%") do set /a C_LINES+=1
 )
-if !C_LINES! gtr 30 (
+if !C_LINES! gtr 15 (
     more +1 "%CHATFILE%" > "%CHATFILE%.tmp"
     move /y "%CHATFILE%.tmp" "%CHATFILE%" >nul
 )

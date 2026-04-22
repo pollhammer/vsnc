@@ -44,7 +44,8 @@ set "SAFEUSER=%USER: =_%"
 set "TMPF=%CHAT%\vsnc_%SAFEUSER%"
 
 :: -------------------- User color handling ------------------
-set COLORS=11 12 13 14 15 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231
+:: Optimized color palette for better readability and variety
+set COLORS=10 11 12 13 14 15 39 46 48 51 75 81 118 121 154 159 165 190 196 201 202 208 214 220 226 229
 set "USERCOLOR="
 if exist "%USERCOLORFILE%" (
     for /f "usebackq tokens=1,2 delims=:" %%A in ("%USERCOLORFILE%") do (
@@ -52,7 +53,8 @@ if exist "%USERCOLORFILE%" (
     )
 )
 if not defined USERCOLOR (
-    set /a IDX=%RANDOM% %% 40
+    :: Random selection from the improved palette
+    set /a IDX=%RANDOM% %% 26
     set /a CNT=0
     for %%C in (%COLORS%) do (
         if !CNT! EQU !IDX! set USERCOLOR=%%C
@@ -60,6 +62,7 @@ if not defined USERCOLOR (
     )
     echo %USER%:!USERCOLOR!>>"%USERCOLORFILE%"
 )
+
 
 :: ====================== MAIN LOOP ==========================
 cls

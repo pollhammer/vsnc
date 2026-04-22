@@ -41,3 +41,6 @@ by Manuel Pollhammer (2026)
 ![Main Interface](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v2.0_01.png)
 <br>
 ![Private Messaging](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v2.0_02.png)
+
+---
+**Developed by Manuel Pollhammer | Release 2026**

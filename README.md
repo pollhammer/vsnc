@@ -38,9 +38,43 @@ by Manuel Pollhammer (2026)
 ---
 
 ## 📸 Screenshots
-![Main Interface](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v2.0_01.png)
-<br>
-![Private Messaging](https://github.com/pollhammer/vsnc/blob/main/Screenshots/scrs_v2.0_02.png)
+<p align="center">
+  <img src="./screenshots/screenshot_v2.2_01.png" alt="Start Menu" width="800">
+  <br>
+  <i>Start Menu</i>
+</p>
+
+<p align="center">
+  <img src="./screenshots/screenshot_v2.2_02.png" alt="Public Chat" width="800">
+  <br>
+  <i>Public Chat Interface</i>
+</p>
+
+<p align="center">
+  <img src="./screenshots/screenshot_v2.2_03.png" alt="Private Message Sender" width="800">
+  <br>
+  <i>Sending a Private Message via /pm</i>
+</p>
+
+<p align="center">
+  <img src="./screenshots/screenshot_v2.2_04.png" alt="Private Message Receiver" width="800">
+  <br>
+  <i>Recipient View (Privacy Filter active)</i>
+</p>
+
+<p align="center">
+  <img src="./screenshots/screenshot_v2.2_05.png" alt="Privacy for Others" width="800">
+  <br>
+  <i>Third-Party View (Private Message is hidden)</i>
+</p>
+
+<p align="center">
+  <img src="./screenshots/screenshot_v2.2_06.png" alt="Database and Colors" width="800">
+  <br>
+ <img src="./screenshots/screenshot_v2.2_07.png" alt="Database and Colors" width="800">
+ <br>
+ <i>Base64 Backend Storage and User Color Configuration</i>
+</p>
 
 ---
 **Developed by Manuel Pollhammer | Release 2026**
